@@ -1,0 +1,23 @@
+CREATE TABLE books (
+   isbn		VARCHAR(13) NOT NULL,
+   title	VARCHAR(255) NOT NULL,
+   author	VARCHAR(255) NOT NULL,
+   src		VARCHAR(255) NOT NULL,
+   detail	VARCHAR(MAX) NOT NULL,
+   PRIMARY KEY(isbn)
+);
+
+CREATE TABLE myBooks (
+   isbn		VARCHAR(13) NOT NULL,
+   title	VARCHAR(255) NOT NULL,
+   author	VARCHAR(255) NOT NULL,
+   src		VARCHAR(255) NOT NULL,
+   detail	VARCHAR(MAX) NOT NULL,
+   PRIMARY KEY(isbn)
+);
+
+CREATE TABLE reviews (
+   isbn		VARCHAR(13) NOT NULL,
+   review	VARCHAR(MAX) NOT NULL
+);
+
